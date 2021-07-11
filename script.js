@@ -41,22 +41,6 @@ $('.page-scroll').on('click', function(e) {
 $(window).scroll(function() {
   let wScroll = $(this).scrollTop();
 
-  if (wScroll >= 0) {
-    $('.page-scroll').removeClass('active')
-    $('.pg-1').addClass('active')
-  }
-  if (wScroll >= 533) {
-    $('.page-scroll').removeClass('active')
-    $('.pg-2').addClass('active')
-  }
-  if (wScroll >= 1035) {
-    $('.page-scroll').removeClass('active')
-    $('.pg-3').addClass('active')
-  }
-  if (wScroll >= 1442) {
-    $('.page-scroll').removeClass('active')
-    $('.pg-4').addClass('active')
-  }
 
 
 
@@ -80,22 +64,3 @@ $('#see-more-skill-2').on('click', function(){
 $('#see-more-skill-3').on('click', function(){
   $('.msk-3').slideToggle(300)
 })
-
-setInterval(() => {
-  let wScroll = $(this).scrollTop();
-  if ($( window ).width() <= 415) {
-    if (wScroll >= 428) {
-      $('.page-scroll').removeClass('active')
-      $('.pg-2').addClass('active')
-    }
-    if (wScroll >= 1497) {
-      $('.page-scroll').removeClass('active')
-      $('.pg-3').addClass('active')
-    }
-    if (wScroll >= 2567) {
-      $('.page-scroll').removeClass('active')
-      $('.pg-4').addClass('active')
-    }
-  }
-
-}, 500);
