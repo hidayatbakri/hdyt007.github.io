@@ -1,468 +1,404 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light py-3">
-      <div class="container">
-        <a class="navbar-brand" href="#">My Portfolio</a>
-        <button class="navbar-toggler menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <!-- <span class="navbar-toggler-icon"></span> -->
-          <i class="fa fa-align-right"></i>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Hi there | My Portfolio</title>
+</head>
+<body>
+  <section class="header" id="top">
+    <nav class="navbar">
+      <button id="toggle-nav" class="block absolute right-5" style="width: 30px; height: 30px;">
+          <i id="hambur" class="fas fa-align-right font-bold text-xl"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link mx-3 page-scroll pg-1" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-3 page-scroll pg-2" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-3 page-scroll pg-3" href="#project">Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-3 page-scroll pg-4" href="#contact">Contact</a>
-            </li>
+      </nav>
+      <div class="sidebar">
+        <ul class="list-menu">
+          <li><a class="page-scroll" href="#about">About Me</a></li>
+          <li><a class="page-scroll" href="#project">My Project</a></li>
+          <li><a class="page-scroll" href="#contact">My Contact</a></li>
+        </ul>
+      </div>
+    <div class="container mx-auto px-5 " style="margin-top: -100px;">
+      
+      <div class="content-header flex justify-center items-center">
+        <h3 class="text-2xl font-semibold text-gray-700">Hi, there!</h3>
+        <h3 class="font-black text-name">I'm Hidayat Bakri</h3>
+        <p class="pt-8 desc-header font-medium">I am a full stack web developer since 2018.
+          I'm also learning android development using kotlin in Android Studio and React Native.</p>
+        </div>
+        <div class="image-header">
+        </div>
+      </div>
+
+      <div class="services px-2 flex justify-between items-center">
+        <div class="serv1 flex flex-col sm:flex-row items-center">
+          <img src="assets/img/ico_webdev.png" alt="">
+          <span class="font-bold pl-2 pt-8 md:pt-0">Web Development</span>
+        </div>
+        <div class="serv1 flex flex-col sm:flex-row items-center">
+          <img src="assets/img/website_analytics_chart_statistics_charts_icon_143353.png" alt="">
+          <span class="font-bold pl-2 pt-8 md:pt-0">Ui/Ux Design</span>
+        </div>
+        <div class="serv1 flex flex-col sm:flex-row items-center">
+          <img src="assets/img/mobile_news_app_follow_read_icon_145612.png" alt="">
+          <span class="font-bold pl-2 pt-8 md:pt-0">Android Development</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about px-3 pt-5" id="about">
+      <div class="container mx-auto">
+        <h1 class="text-center text-3xl font-semibold">It's About Me</h1>
+        <p class="desc-about text-lg font-medium text-justify">Hi, my name is Hidayat, I was born and raised in Indonesia. I have loved programming since I was in junior high school. I was interested in programming because at that time I was curious about how to make games, so I started looking at programming tutorials.</p>
+        <p class="desc-about text-lg font-medium text-justify">I have experience in the field of web development and I master programming languages ​​such as php and javascript, and frameworks of these programming languages ​​such as php Laravel 7 and 8, javascript such as jQuery. On the front-end I use html, css, javascript with bootstrap and tailwind css framework.</p>
+        
+        <div class="list-button flex justify-center mt-10">
+          <button id="btn-modal5" class="my-btn btn-blue mx-3">My Skills</button>
+          <button id="btn-modal6" class="my-btn btn-yellow mx-3">Contact</button>
+          <button class="my-btn btn-orange mx-3">See My Cv</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="planet"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8ecae6" fill-opacity="1" d="M0,64L48,74.7C96,85,192,107,288,144C384,181,480,235,576,240C672,245,768,203,864,160C960,117,1056,75,1152,101.3C1248,128,1344,224,1392,272L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <section class="project" id="project">
+      <div class="container mx-auto px-5 md:px-10">
+        <h1 class="text-5xl font-bold text-white">My Project</h1>
+        <h4 class="pt-3 text-2xl text-white font-semibold">Come see all the projects I've made</h4>
+      
+        <div class="my-project mt-10 py-10">
+
+          <div class="slide-satu">
+            <div class=" my-5 mp1 flex flex-col justify-center md:flex-row md:justify-start text-center md:text-left items-center">
+              <div class="left">
+                <img src="assets/img/infocovid.png">
+              </div>
+              <div class="right pl-0 md:pl-10 pt-5 md:pt-0">
+                <h3 class="text-2xl font-semibold text-gray-700">Info Covid</h3>
+                <h4 class="text-lg font-semibold text-gray-600">Status: Finished</h4>
+                <button id="btn-modal1" class="my-btn btn-yellow mt-5 md:mt-10">Detail</button>
+              </div>
+            </div>
+            <div class=" my-5 mp1 flex flex-col justify-center md:flex-row md:justify-start text-center md:text-left items-center">
+              <div class="left">
+                <img src="assets/img/shortenurl1.png">
+              </div>
+              <div class="right pl-0 md:pl-10 pt-5 md:pt-0">
+                <h3 class="text-2xl font-semibold text-gray-700">Shorten Url</h3>
+                <h4 class="text-lg font-semibold text-gray-600">Status: Finished</h4>
+                <button id="btn-modal2" class="my-btn btn-yellow mt-5 md:mt-10">Detail</button>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="slide-dua">
+            <div class=" my-5 mp1 flex flex-col justify-center md:flex-row md:justify-start text-center md:text-left items-center">
+              <div class="left">
+                <img src="assets/img/webppdb.png">
+              </div>
+              <div class="right pl-0 md:pl-10 pt-5 md:pt-0">
+                <h3 class="text-2xl font-semibold text-gray-700">Website PPDB Online</h3>
+                <h4 class="text-lg font-semibold text-gray-600">Status: Finished</h4>
+                <button id="btn-modal3" class="my-btn btn-yellow mt-5 md:mt-10">Detail</button>
+              </div>
+            </div>
+            <div class=" my-5 mp1 flex flex-col justify-center md:flex-row md:justify-start text-center md:text-left items-center">
+              <div class="left">
+                <img src="assets/img/webmacha.png">
+              </div>
+              <div class="right pl-0 md:pl-10 pt-5 md:pt-0">
+                <h3 class="text-2xl font-semibold text-gray-700">Machabot</h3>
+                <h4 class="text-lg font-semibold text-gray-600">Status: Finished</h4>
+                <button id="btn-modal4" class="my-btn btn-yellow mt-5 md:mt-10">Detail</button>
+              </div>
+            </div>
+            
+          </div>
+
+
+          <div class="button-slide flex justify-end">
+            <button id="btn-slide1" class="btn-slide active">1</button>
+            <button id="btn-slide2" class="btn-slide">2</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8ecae6" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,213.3C384,203,480,181,576,170.7C672,160,768,160,864,170.7C960,181,1056,203,1152,208C1248,213,1344,203,1392,197.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+  
+    <section class="contact mb-10" id="contact">
+      <div class="container flex flex-col md:flex-row justify-between mx-auto px-5 md:px-10">
+        <div class="left-contact" style="z-index: 99;">
+          <h1 class="text-3xl font-bold">This is my contact</h1>
+          <p class="text-lg">Want to hire me? or is there anything I can help you with. You can contact me</p>
+          <h4 class="font-semibold text-xl text-center pt-10">Contact me by email</h4>
+          <div class="my-email mt-5">
+            <h1 class="text-lg md:text-2xl font-semibold">manusiabiasa819@gmail.com</h1>
+          </div>
+        </div>
+        <div class="right-contact"></div>
+      </div>
+    </section>
+
+    <a href="#top" class="page-scroll" id="circl">
+      <div class="circl">
+        <i class="fas fa-arrow-up"></i>
+      </div>
+    </a>
+
+    <footer class="bg-gray-700">
+      <a href="https://www.instagram.com/hidayat_yy/" target="_blank"><i class="mx-2 fab fa-instagram-square text-4xl text-gray-400"></i></a>
+      <a href="https://github.com/hdyt007" target="_blank"><i class="mx-2 fab fa-github-square text-4xl text-gray-400"></i></a>
+    </footer>
+  
+
+    <!-- my modal project -->
+    <div class="modal" id="modal-project1">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="close">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="modal-body p-5">
+          <div class="left">
+            <img src="assets/img/infocovid.png">
+          </div>
+          <h1 class="py-3 text-2xl font-semibold">INFO COVID</h1>
+          <p>
+            <b>Project description</b> <br>
+            A website that provides information about the development of Covid-19 cases in Indonesia and also at the provincial level. We also provide information about empty hospital beds, both for patients with COVID-19 and non-covid-19 symptoms. With api integration we display data according to the data currently available in the government.
+          </p>
+          <h4 class="font-bold pt-5">Techonology :</h4>
+          <ul style="list-style-type: square;" class="pl-5">
+            <li>Php 7</li>
+            <li>Html 5</li>
+            <li>Css 3</li>
+            <li>Tailwind Css</li>
+            <li>Javascript</li>
+            <li>jQuery</li>
+            <li>Chart Js</li>
+            <li>Api Integration</li>
           </ul>
         </div>
       </div>
-    </nav>
-    <div id="about"></div>
-    <section id="about-me mt-5" class="about d-flex align-items-center">
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-md-6 col-sm-12" data-aos="fade-right">
-            <h3 class="title">Hi There!,<br> I'm Hidayat Bakri</h3>
-            <p class="sub-title-about">
-              I am a full stack web developer since 2018. <br>
-              I'm also learning android development using kotlin in Android Studio and React Native.
-            </p>
-            <a  class="page-scroll btn btn-me mt-3 pt-2" href="#contact">Contact Me</a>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            
+    </div>
+    <div class="modal" id="modal-project2">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="close">
+            <i class="fas fa-times"></i>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="skills">
-      <div class="container">
-        <div class="card backg-card">
-          <div class="card-body">
-            <h5 class="text-center">My Skill</h5>
-            <div class="icons d-flex justify-content-between flex-wrap p-5">
-              <i class="fab fa-laravel" data-aos="flip-left" data-aos-delay="50" data-aos-offset="200"></i>
-              <i class="fab fa-php" data-aos="flip-left" data-aos-delay="150" data-aos-offset="200"></i>
-              <i class="fab fa-html5" data-aos="flip-left" data-aos-delay="250" data-aos-offset="200"></i>
-              <i class="fab fa-css3" data-aos="flip-left" data-aos-delay="350" data-aos-offset="200"></i>
-              <i class="fab fa-bootstrap" data-aos="flip-left" data-aos-delay="450" data-aos-offset="200"></i>
-              <i class="fab fa-js" data-aos="flip-left" data-aos-delay="550" data-aos-offset="200"></i>
-            </div>
+        <div class="modal-body p-5">
+          <div class="left">
+            <img src="assets/img/shortenurl1.png">
           </div>
-        </div>
-        <div class="row mt-1">
-          <div class="col-md-4 col-sm-1 mt-3" data-aos-duration="1000" data-aos="zoom-in-down" data-aos-delay="150">
-            <div class="card card-skil backg-card">
-              <div class="card-body">
-                <i class="fas fa-laptop-code faskil d-flex justify-content-center align-items-center"></i>
-                <h4 class="pt-3">Web Development</h4>
-                <button class="btn btn-me mt-3" id="see-more-skill-1">See More</button>
-                <div class="more-skill msk-1 pt-3">
-                  <ul>
-                    <li>Laravel 8</li>
-                    <li>Php 7</li>
-                    <li>Rest Api</li>
-                    <li>Html 5</li>
-                    <li>Css 3</li>
-                    <li>Bootstrap 5</li>
-                    <li>Tailwind Css</li>
-                    <li>Javascript</li>
-                    <li>jQuery</li>
-                    <li>Ajax</li>
-                    <li>React Js</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 mt-3" data-aos-duration="1000" data-aos="zoom-in-down" data-aos-delay="250">
-            <div class="card card-skil backg-card">
-              <div class="card-body">
-                <i class="fas fa-palette faskil d-flex justify-content-center align-items-center"></i>
-                <h4 class="pt-3">Ui/Ux Design</h4>
-                <button class="btn btn-me mt-3" id="see-more-skill-2">See More</button>
-                <div class="more-skill msk-2 pt-3">
-                  <ul>
-                    <li>Figma</li>
-                    <li>Adobe Xd</li>
-                    <li>Photosop</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 mt-3" data-aos-duration="1000" data-aos="zoom-in-down" data-aos-delay="350">
-            <div class="card card-skil backg-card">
-              <div class="card-body">
-                <i class="fas fa-sitemap faskil d-flex justify-content-center align-items-center"></i>
-                <h4 class="pt-3">Android Development</h4>
-                <button class="btn btn-me mt-3" id="see-more-skill-3">See More</button>
-                <div class="more-skill msk-3 pt-3">
-                  <ul>
-                    <li>React Native</li>
-                    <li>Kotlin</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h1 class="py-3 text-2xl font-semibold">SHORTEN URL</h1>
+          <p>
+            <b>Project description</b> <br>
+            Short Url, Easy For You Short url addresses, can make it easier for users to access your website. This website was created to make it easier for you to access or remember your website url address easily because this website can shorten your url address with a custom url according to your wishes.
+          </p>
+          <h4 class="font-bold pt-5">Techonology :</h4>
+          <ul style="list-style-type: square;" class="pl-5">
+            <li>Php 7</li>
+            <li>Html 5</li>
+            <li>Css 3</li>
+            <li>Bootstrap 5</li>
+            <li>Javascript</li>
+            <li>jQuery</li>
+            <li>Sweet Alert</li>
+          </ul>
         </div>
       </div>
-    </section>
-    <section id="project">
-      <div class="container mt-5">
-        <h5>Project</h5>
-        <div class="row">
-          <div class="col-md-4 col-sm-12" data-aos="flip-left" data-aos-delay="150" data-aos-duration="1000">
-            <div class="card bg-transparent" style="border-radius: 12px;">
-              <div class="card-body">
-                <img src="assets/img/infocovid.png" style="border-radius: 12px;" width="100%">
-              </div>
-            </div>
-            <div class="card-footer bg-transparent text-center">
-              <h5 class="text-center" style="margin-bottom: -5px;">~ Info Covid</h5>
-              <button type="button" class="btn btn-me mt-3" data-bs-toggle="modal" data-bs-target="#project6">
-                Detail
-              </button>
-            </div>
-          </div>
-          
-          <div class="col-md-4 col-sm-12" data-aos="flip-left" data-aos-delay="150" data-aos-duration="1000">
-            <div class="card bg-transparent" style="border-radius: 12px;">
-              <div class="card-body">
-                <img src="assets/img/shortenurl1.png" style="border-radius: 12px;" width="100%">
-              </div>
-            </div>
-            <div class="card-footer bg-transparent text-center">
-              <h5 class="text-center" style="margin-bottom: -5px;">~ Shorten Url</h5>
-              <button type="button" class="btn btn-me mt-3" data-bs-toggle="modal" data-bs-target="#project5">
-                Detail
-              </button>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12" data-aos="flip-left" data-aos-delay="150" data-aos-duration="1000">
-            <div class="card bg-transparent" style="border-radius: 12px;">
-              <div class="card-body">
-                <img src="assets/img/webppdb.png" style="border-radius: 12px;" width="100%">
-              </div>
-            </div>
-            <div class="card-footer bg-transparent text-center">
-              <h5 class="text-center" style="margin-bottom: -5px;">~ PPDB</h5>
-              <button type="button" class="btn btn-me mt-3" data-bs-toggle="modal" data-bs-target="#project4">
-                Detail
-              </button>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12" data-aos="flip-left" data-aos-delay="250" data-aos-duration="1000">
-            <div class="card bg-transparent" style="border-radius: 12px;">
-              <div class="card-body">
-                <img src="assets/img/webporto.png" style="border-radius: 12px;" width="100%">
-              </div>
-              <div class="card-footer bg-transparent text-center">
-                <h5 class="text-center" style="margin-bottom: -5px;">~ Portfolio</h5>
-                <button type="button" class="btn btn-me mt-3" data-bs-toggle="modal" data-bs-target="#project3">
-                Detail
-              </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12" data-aos="flip-left" data-aos-delay="350" data-aos-duration="1000">
-            <div class="card bg-transparent" style="border-radius: 12px;">
-              <div class="card-body">
-                <img src="assets/img/webmacha.png" class="" style="border-radius: 12px;" width="100%">
-              </div>
-            </div>
-            <div class="card-footer bg-transparent text-center">
-              <h5 class="text-center" style="margin-bottom: -5px;">~ Machabot</h5>
-              <button type="button" class="btn btn-me mt-3" data-bs-toggle="modal" data-bs-target="#project2">
-                Detail
-              </button>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12" data-aos="flip-left" data-aos-delay="350" data-aos-duration="1000">
-            <div class="card bg-transparent" style="border-radius: 12px;">
-              <div class="card-body">
-                <img src="assets/img/email-template.png" class="" style="border-radius: 12px;" width="100%">
-              </div>
-            </div>
-            <div class="card-footer bg-transparent text-center">
-              <h5 class="text-center" style="margin-bottom: -5px;">~ Email Template</h5>
-              <button type="button" class="btn btn-me mt-3" data-bs-toggle="modal" data-bs-target="#project1">
-                Detail
-              </button>
-            </div>
+    </div>
+    <div class="modal" id="modal-project3" ">
+      <div class="modal-content" style="margin-top: 350px;">
+        <div class="modal-header">
+          <div class="close">
+            <i class="fas fa-times"></i>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="container">
-        <div class="card-contact d-flex justify-content-center align-items-center">
-          <h4 style="font-size: 40px;">Contact Me</h4>
+        <div class="modal-body p-5">
+          <div class="left">
+            <img src="assets/img/webppdb.png">
+          </div>
+          <h1 class="py-3 text-2xl font-semibold">WEBSITE PPDB</h1>
+          <p>
+            <b>Project description</b> <br>
+            Here I only take the example of SMPN 4 Sungguminasa school.
+            This website was built to make it easier for prospective students to register at school online, this website was built using laravel 8 technology. For this website there are 2 levels, the first is Admin/Teacher and the second is user/prospective students. Admin Menu: -View the list of prospective students -View student data details -Delete student data -Edit student data -Verify student account -Determining student announcements whether to pass or not pass
+            User Menu: -View profile -Form to request verification to admin/teacher -Announcement
+          </p>
+          <h4 class="font-bold pt-5">Techonology :</h4>
+          <ul style="list-style-type: square;" class="pl-5">
+            <li>Laravel 8</li>
+            <li>Php 7</li>
+            <li>Html 5</li>
+            <li>Css 3</li>
+            <li>Bootstrap 4</li>
+            <li>Javascript</li>
+            <li>jQuery</li>
+          </ul>
         </div>
       </div>
-      <div class="list-cont d-flex justify-content-center pt-5">
-        <ul class="list-group list-group-flush text-center">
-          <li class="list-group-item bg-transparent text-white" data-aos="zoom-in-up" data-aos-delay="150" data-aos-duration="1000"><i class="fas fa-envelope-open-text" data-aos-offset="200"></i> <span class="ps-3">sappo04tv@gmail.com</span></li>
-          <li class="list-group-item bg-transparent text-white" data-aos="zoom-in-up" data-aos-delay="150" data-aos-duration="1000"><i class="fas fa-envelope-open-text" data-aos-offset="200"></i> <span class="ps-3">manusiabiasa819@gmail.com</span></li>
-          <li class="list-group-item bg-transparent text-white" data-aos="zoom-in-up" data-aos-delay="150" data-aos-duration="1000"><i class="fab fa-instagram" data-aos-offset="200"></i> <a class="ps-3"><a class="text-white" style="text-decoration: none;" target="_blank" href="https://www.instagram.com/hidayat_yy/">instagram.com/hidayat_yy/</a></span></li>
-          <li class="list-group-item bg-transparent text-white" data-aos="zoom-in-up" data-aos-delay="250" data-aos-duration="1000"><i class="fab fa-github" data-aos-offset="200"></i> <span class="ps-3"><a class="text-white" style="text-decoration: none;" target="_blank" href="https://github.com/hdyt007">github.com/hdyt007</a></span></li>
-        </ul>
+    </div>
+    <div class="modal" id="modal-project4">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="close">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="modal-body p-5">
+          <div class="left">
+            <img src="assets/img/webmacha.png">
+          </div>
+          <h1 class="py-3 text-2xl font-semibold">MACHABOT</h1>
+          <p>
+            <b>Project description</b> <br>
+            This is a website for chatting with bots with real-time technology.
+          </p>
+          <h4 class="font-bold pt-5">Techonology :</h4>
+          <ul style="list-style-type: square;" class="pl-5">
+            <li>Php 7</li>
+            <li>Html 5</li>
+            <li>Css 3</li>
+            <li>Bootstrap 4</li>
+            <li>Javascript</li>
+            <li>jQuery</li>
+            <li>Ajax</li>
+          </ul>
+        </div>
       </div>
-    </section>
-    <footer class="d-flex justify-content-center align-items-center">
-      <h5>@2020 Create By.Hidayat</h5>
-    </footer>
+    </div>
 
-
-
-
-
-
-
-
-    <div class="modal fade" id="project6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Detail Project</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- modal skill -->
+    <div class="modal" id="modal-skill">
+      <div class="modal-content" style="margin-top: 50px;">
+        <div class="modal-header">
+          <div class="close">
+            <i class="fas fa-times"></i>
           </div>
-          <div class="modal-body">
-            <img src="assets/img/infocovid.png" style="border-radius: 12px;" width="100%">
-            <div class="desc py-3" style="color: black;">
-              <p>
-                <b>Project description</b> <br>
+        </div>
+        <div class="modal-body p-10 flex justify-between" style="flex-wrap: wrap-reverse;">
+          <i class="p-3 text-5xl text-gray-800 fab fa-laravel"></i>
+          <i class="p-3 text-5xl text-gray-800 fab fa-php"></i>
+          <i class="p-3 text-5xl text-gray-800 fab fa-html5"></i>
+          <i class="p-3 text-5xl text-gray-800 fab fa-css3-alt"></i>
+          <i class="p-3 text-5xl text-gray-800 fab fa-js-square"></i>
+          <i class="p-3 text-5xl text-gray-800 fab fa-bootstrap"></i>
+          <i class="p-3 text-5xl text-gray-800 fab fa-react"></i>
+        </div>
+      </div>
+    </div>
 
-                A website that provides information about the development of Covid-19 cases in Indonesia and also at the provincial level. We also provide information about empty hospital beds, both for patients with COVID-19 and non-covid-19 symptoms. With api integration we display data according to the data currently available in the government.
-              </p>
-              <ul>
-                <li><b>Technology</b></li>
-                <li>Php 7</li>
-                <li>Html 5</li>
-                <li>Css 3</li>
-                <li>Tailwind Css</li>
-                <li>Javascript</li>
-                <li>jQuery</li>
-                <li>Chart Js</li>
-                <li>Api Integration</li>
-              </ul>
-              <a href="http://infocovid-19.rf.gd/" target="_blank">Live demo</a>
-            </div>
+    <div class="modal" id="modal-contact">
+      <div class="modal-content" style="margin-top: 50px;">
+        <div class="modal-header">
+          <div class="close">
+            <i class="fas fa-times"></i>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-times pe-3"></i>Close</button>
+        </div>
+        <div class="modal-body p-5 ">
+          <h4 class="font-semibold text-xl text-center pt-10">Contact me by email</h4>
+          <div class="my-email mt-5">
+            <h1 class="text-lg md:text-2xl font-semibold">manusiabiasa819@gmail.com</h1>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal fade" id="project5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Detail Project</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img src="assets/img/shortenurl1.png" style="border-radius: 12px;" width="100%">
-            <div class="desc py-3" style="color: black;">
-              <p>
-                <b>Project description</b> <br>
 
-                Short Url, Easy For You
-                Short url addresses, can make it easier for users to access your website.
-                This website was created to make it easier for you to access or remember your website url address easily because this website can shorten your url address with a custom url according to your wishes.
-              </p>
-              <ul>
-                <li><b>Technology</b></li>
-                <li>Php 7</li>
-                <li>Html 5</li>
-                <li>Css 3</li>
-                <li>Bootstrap 5</li>
-                <li>Javascript</li>
-                <li>jQuery</li>
-                <li>Sweet Alert</li>
-              </ul>
-              <a href="https://youtu.be/txYhY7UlfgA" target="_blank">Watch demo</a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-times pe-3"></i>Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="modal fade" id="project4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Detail Project</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img src="assets/img/webppdb.png" style="border-radius: 12px;" width="100%">
-            <div class="desc py-3" style="color: black;">
-              <p>
-                <b>Project description</b> <br>
 
-                Here I only take the example of SMPN 4 Sungguminasa school. <br>
-                This website was built to make it easier for prospective students to register at school online, this website was built using laravel 8 technology. For this website there are 2 levels, the first is Admin/Teacher and the second is user/prospective students.
-                Admin Menu:
-                -View the list of prospective students
-                -View student data details
-                -Delete student data
-                -Edit student data
-                -Verify student account
-                -Determining student announcements whether to pass or not pass
-                <br>
-                User Menu:
-                -View profile
-                -Form to request verification to admin/teacher
-                -Announcement
-              </p>
-              <ul>
-                <li><b>Technology</b></li>
-                <li>Laravel 8</li>
-                <li>Php 7</li>
-                <li>Html 5</li>
-                <li>Css 3</li>
-                <li>Bootstrap 4</li>
-                <li>Javascript</li>
-                <li>jQuery</li>
-              </ul>
-              <a href="#">Watch demo (Coming Soon)</a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-times pe-3"></i>Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+  
 
-    <div class="modal fade" id="project3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Detail Project</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img src="assets/img/webporto.png" style="border-radius: 12px;" width="100%">
-            <div class="desc py-3" style="color: black;">
-              <p>
-                <b>Project description</b> <br>
-                
-                This is my portfolio website.
-                
-              </p>
-              <ul>
-                <li><b>Technology</b></li>
-                <li>Html 5</li>
-                <li>Css 3</li>
-                <li>Bootstrap 5</li>
-                <li>Javascript</li>
-                <li>jQuery</li>
-              </ul>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-times pe-3"></i>Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <script src="assets/js/jQuery.js"></script>
+  
+  <script>
+    const button = document.querySelector('#toggle-nav'),
+      hambur = document.querySelector('#hambur'),
+      sidebar = document.querySelector('.sidebar');
 
-    <div class="modal fade" id="project2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Detail Project</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img src="assets/img/webmacha.png" style="border-radius: 12px;" width="100%">
-            <div class="desc py-3" style="color: black;">
-              <p>
-                <b>Project description</b> <br>
-                This is a website for chatting with bots with real-time technology.
-                
-              </p>
-              <ul>
-                <li><b>Technology</b></li>
-                <li>Php 7</li>
-                <li>Html 5</li>
-                <li>Css 3</li>
-                <li>Bootstrap 4</li>
-                <li>Javascript</li>
-                <li>jQuery</li>
-                <li>Ajax</li>
-              </ul>
-              <a href="https://youtu.be/ADWSsvBjUpk" target="_blank">Watch demo</a>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-times pe-3"></i>Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+      button.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+        hambur.classList.toggle('fa-align-right');
+        hambur.classList.toggle('fa-times');
+        hambur.classList.toggle('active');
+      });
 
-    <div class="modal fade" id="project1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Detail Project</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img src="assets/img/email-template.png" style="border-radius: 12px;" width="100%">
-            <div class="desc py-3" style="color: black;">
-              <p>
-                <b>Project description</b> <br>
-                this is an email template with a design that is of course responsive and has a beautiful design.
-                
-              </p>
-              <ul>
-                <li><b>Technology</b></li>
-                <li>Html 5</li>
-                <li>Css 3</li>
-              </ul>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-times pe-3"></i>Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+      $('.slide-dua').hide('slow')
 
-    <script src="assets/js/jQuery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="script.js"></script>
-  </body>
+      $('#btn-slide2').on('click', () => {
+        $('#btn-slide2').addClass('active')
+        $('#btn-slide1').removeClass('active')
+
+        $('.slide-satu').hide('slow')
+        $('.slide-dua').show('slow')
+      })
+
+      $('#btn-slide1').on('click', () => {
+        $('#btn-slide1').addClass('active')
+        $('#btn-slide2').removeClass('active')
+
+        $('.slide-satu').show('slow')
+        $('.slide-dua').hide('slow')
+      })
+
+      // modal project
+
+      $('#btn-modal1').on('click', () => {
+        $('#modal-project1').addClass('active')
+      })
+      $('#btn-modal2').on('click', () => {
+        $('#modal-project2').addClass('active')
+      })
+      $('#btn-modal3').on('click', () => {
+        $('#modal-project3').addClass('active')
+      })
+      $('#btn-modal4').on('click', () => {
+        $('#modal-project4').addClass('active')
+      })
+
+      // modal skill
+      $('#btn-modal5').on('click', () => {
+        $('#modal-skill').addClass('active')
+      })
+
+      $('#btn-modal6').on('click', () => {
+        $('#modal-contact').addClass('active')
+      })
+
+      $('.close').on('click', () => {
+        $('.modal').removeClass('active')
+      })
+
+      $('.page-scroll').on('click', function(e) {
+
+      var tujuan = $(this).attr('href');
+
+      $('.page-scroll').removeClass('active')
+      $(this).addClass('active')
+
+      var elemenTujuan = $(tujuan);
+
+      $('html , body').animate({
+        scrollTop: elemenTujuan.offset().top - 120
+      });
+
+      e.preventDefault();
+      });
+
+      
+  </script>
+
+</body>
 </html>
