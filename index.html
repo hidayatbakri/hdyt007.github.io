@@ -120,9 +120,14 @@
     <h1 class="text-4xl font-bold pt-3">Projects I've Made
     </h1>
 
-    <input type="hidden" id="total-project" value="4">
+    <input type="hidden" id="total-project" value="5">
 
     <div class="flex justify-center flex-wrap mt-10">
+      <div class="card bg-white p-4 pb-10 m-2 rounded-xl">
+        <img src="assets/img/lp1.png">
+        <h2 class="text-2xl font-semibold py-3 mb-3">Landing Page (Front End)</h2>
+        <button id="btn-project project5" class="btn-project5 bg-primary text-white py-2 px-5 rounded-full">Detail <i class="fas fa-angle-right"></i></button>
+      </div>
       <div class="card bg-white p-4 pb-10 m-2 rounded-xl">
         <img src="assets/img/ngeser.png">
         <h2 class="text-2xl font-semibold py-3 mb-3">Ngeser</h2>
@@ -174,6 +179,28 @@
 
 
 <!-- Modal -->
+<div class="modal-project5 modal-project">
+  <div class="flex justify-end m-10">
+    <i class="fas fa-times text-3xl close-project" id="close-modal-project5"></i>
+  </div>
+  <div class="content container mb-2 mx-auto px-3">
+    <img src="assets/img/lp1.png" class="w-full mb-10">
+    <div class="tech-project my-5">
+      <h3 class="font-medium">Landing Page For Education</h3>
+      <div class="list-skill-project flex justify-start flex-wrap">
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Html 5</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Css 3</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Tailwind Css</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Javascript</div>
+      </div>
+    </div>
+    <h1 class="font-bold text-2xl">Project description</h1>
+    <p class="font-medium pb-10">
+      I created this website for an example of a landing page website
+    </p>
+      <a href="https://hdyt007.github.io/landingpage1/" target="_blank" class="bg-primary text-white p-3 rounded-full">Visit Website</a>
+    </div>
+</div>
 <div class="modal-project1 modal-project">
   <div class="flex justify-end m-10">
     <i class="fas fa-times text-3xl close-project" id="close-modal-project1"></i>
@@ -196,7 +223,7 @@
     <h1 class="font-bold text-2xl">Project description</h1>
     <p class="font-medium pb-10">
       Website for URL shortener for free. By using laravel 8 technology. This website also has a QR code feature and the user can find out how many times the URL is clicked</p>
-      <a href="http://ngeser.site/" class="bg-primary text-white p-3 rounded-full">Visit Website</a>
+      <a href="http://ngeser.site/" target="_blank" class="bg-primary text-white p-3 rounded-full">Visit Website</a>
     </div>
 </div>
 <div class="modal-project2 modal-project">
@@ -221,7 +248,7 @@
       This project was created to help the public get information about the latest data on covid-19 in Indonesia which is integrated with data from the central government, this website also has information about the availability of vacant beds for both Covid-19 and non-covid-19 sufferers in all hospitals in Indonesia, making it easier for the community.
     </p>
 
-    <a href="http://infocovid-19.rf.gd/" class="bg-primary text-white p-3 rounded-full">Visit Website</a>
+    <a href="http://infocovid-19.rf.gd/" target="_blank" class="bg-primary text-white p-3 rounded-full">Visit Website</a>
   </div>
 </div>
 <div class="modal-project3 modal-project">
