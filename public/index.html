@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Portfolio | Hidayat</title>
+</head>
+<body>
+  <section id="header" class="header">
+    <nav class="flex items-center flex-wrap justify-between px-8 shadow-md">
+      <h1 class="text-3xl font-bold">Person</h1>
+      <button class="menu-toggle">
+        <i class="fas fa-align-right text-3xl"></i>
+      </button>
+      <ul class="ul-menu flex flex-col sm:flex-row justify-center items-center sm:justify-between">
+        <li class="text-lg my-5 hover:font-semibold duration-150 ease-in-out"><a class="page-scroll" href="#header">About Me</a></li>
+        <li class="text-lg my-5 hover:font-semibold duration-150 ease-in-out"><a class="page-scroll" href="#about">Service</a></li>
+        <li class="text-lg my-5 hover:font-semibold duration-150 ease-in-out"><a class="page-scroll" href="#project">Project</a></li>
+        <li class="text-lg my-5 hover:font-semibold duration-150 ease-in-out"><a class="page-scroll" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container mx-auto">
+      <div class="header-content grid grid-cols-1 md:grid-cols-2 py-8">
+        <div class="left-content flex flex-col justify-center px-3 lg:px-0">
+          <h1 class="font-bold">
+            Hy There! <br>
+            I am <span class="text-blue-700">Hidayat B</span>
+          </h1>
+          <p class="pt-3">
+            Hi, I am a programmer in the field of frontend and backend developer or fullstack developer. I am punctual, discipline, and uphold quality person .
+          </p>
+          <div class="button-header">
+            <a href="#" class="bg-blue-700 text-white p-4 text-2xl rounded-md hover:bg-blue-800 hover:text-gray-100 hover:p-5 duration-300 ease-in-out">Contact Me</a>
+          </div>
+        </div>
+        <div class="right-content flex items-center justify-center">
+          <img src="img/header-img.png">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about">
+    <div class="container mx-auto px-4">
+      <div class="about-content">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div class="left-content flex justify-center">
+            <img src="img/service-img.png">
+          </div>
+          <div class="right-content mt-10 md:mt-0">
+            <h1 class="text-4xl font-bold">
+              My Awesome <span class="text-blue-700">Service</span>
+            </h1>
+            <p class=" pt-5">
+              I have experience in the front-end and back-end fields, especially in website development. And my side skill is Ui (User Interface) and Ux (User Experience) design, in this part I use Figma and Adobe Xd software. And the last android application development, in this field I am very basic, and still learning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="project" class="project">
+    <div class="container mx-auto">
+      <h1 class="text-center font-bold text-4xl pb-6">Recent Project</h1>
+      <input type="hidden" id="total-project" value="5">
+      <div class="list-project grid grid-cols-1 sm:grid-cols-2">
+        <div class="m-3 flex justify-center flex-col items-center" id="my-project">
+          <img src="img/lp1.png" class="rounded-md">
+          <figcaption>
+            <button id="btn-project project5" class="btn-project5 bg-blue-700 text-white p-2 rounded-md">Detail</butt>
+          </figcaption>
+        </div>
+        <div class="m-3 flex justify-center flex-col items-center" id="my-project">
+          <img src="img/ngeser-login.png" class="rounded-md">
+          <figcaption>
+            <button id="btn-project project4" class="btn-project4 bg-blue-700 text-white p-2 rounded-md">Detail</butt>
+          </figcaption>
+        </div>
+        <div class="m-3 flex justify-center flex-col items-center" id="my-project">
+          <img src="img/hiBlog.png" class="rounded-md">
+          <figcaption>
+            <button id="btn-project project3 " class="btn-project3 bg-blue-700 text-white p-2 rounded-md">Detail</butt>
+          </figcaption>
+        </div>
+        <div class="m-3 flex justify-center flex-col items-center" id="my-project">
+          <img src="img/infocovid.png" class="rounded-md">
+          <figcaption>
+            <button id="btn-project project2 " class="btn-project2 bg-blue-700 text-white p-2 rounded-md">Detail</butt>
+          </figcaption>
+        </div>
+        <div class="m-3 flex justify-center flex-col items-center" id="my-project">
+          <img src="img/webmacha.png" class="rounded-md">
+          <figcaption>
+            <button id="btn-project project1 " class="btn-project1 bg-blue-700 text-white p-2 rounded-md">Detail</butt>
+          </figcaption>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h1 class="text-4xl font-bold pt-3 text-center">Contact Me Via <br>
+      The Contact Below
+    </h1>
+    <div class="flex justify-center mt-10">
+      <img src="img/icon_contact.png">
+    </div>
+  
+    <div class="flex justify-center mt-10">
+      <div class="card bg-white p-5 m-3">
+        <h2 class="text-2xl font-semibold text-center">Contact Me <br> Via Email</h2>
+        <button id="copy-email" class="bg-white w-full py-5 rounded-xl font-semibold mt-10">Copy Email</button>
+      </div>
+      <div class="card bg-white p-5 m-3">
+        <h2 class="text-2xl font-semibold text-center">My Upwork</h2>
+        <a href="http://ngeser.site/tgfrn" target="_blank">
+          <button id="copy-upwork" class="bg-white w-full py-5 rounded-xl font-semibold mt-10">Visit Profile</button>
+        </a>
+      </div>
+      <input type="text" id="text-email" value="manusiabiasa819@gmail.com" style="display: none;">
+    </div>
+  </section>
+  <a class="page-scroll" href="#header">
+    <div class="fixed hover:bg-blue-800 duration-300 ease-in-out text-lg bg-blue-700 to-top rounded-full flex items-center justify-center">
+      <i class="fas fa-sort-up text-white"></i>
+    </div>
+  </a>
+
+  <footer class="bg-gray-700 flex justify-center items-center ">
+    <h1 class="text-white font-bold">@2022 Created by.Hidayat</h1>
+    <div class="more-info-footer">
+      <a href="https://github.com/hdyt007/" target="_blank">
+        <i class="fab fa-github-square p-2 text-white text-3xl"></i>
+      </a>
+      <a href="http://ngeser.site/2mybe" target="_blank">
+        <i class="fab fa-instagram-square p-2 text-white text-3xl"></i>
+      </a>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- Modal -->
+<div class="modal-project5 modal-project">
+  <div class="flex justify-end m-10">
+    <i class="fas fa-times text-3xl close-project" id="close-modal-project5"></i>
+  </div>
+  <div class="content container mb-2 mx-auto px-3">
+    <img src="img/lp1.png" class="w-full mb-10">
+    <div class="tech-project my-5">
+      <h3 class="font-medium">Landing Page For Education</h3>
+      <div class="list-skill-project flex justify-start flex-wrap">
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Html 5</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Css 3</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Tailwind Css</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Javascript</div>
+      </div>
+    </div>
+    <h1 class="font-bold text-2xl">Project description</h1>
+    <p class="font-medium pb-10">
+      I created this website for an example of a landing page website.
+    </p>
+      <a href="https://hdyt007.github.io/landingpage1/" target="_blank" class="bg-primary text-white p-3 rounded-full">Visit Website</a>
+    </div>
+</div>
+<div class="modal-project4 modal-project">
+  <div class="flex justify-end m-10">
+    <i class="fas fa-times text-3xl close-project" id="close-modal-project4"></i>
+  </div>
+  <div class="content container mb-2 mx-auto px-3">
+    <img src="img/ngeser-login.png" class="w-full mb-10">
+    <div class="tech-project my-5">
+      <h3 class="font-medium">Skill & Technology</h3>
+      <div class="list-skill-project flex justify-start flex-wrap">
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Html 5</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Css 3</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Php</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Laravel 8</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Bootstrap 5</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Javascript</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">jQuery</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">MySql</div>
+      </div>
+    </div>
+    <h1 class="font-bold text-2xl">Project description</h1>
+    <p class="font-medium pb-10">
+      Website for URL shortener for free. By using laravel 8 technology. This website also has a QR code feature and the user can find out how many times the URL is clicked</p>
+      <a href="http://ngeser.site/" target="_blank" class="bg-blue-700 text-white p-3 rounded-full">Visit Website</a>
+    </div>
+</div>
+<div class="modal-project3 modal-project">
+  <div class="flex justify-end m-10">
+    <i class="fas fa-times text-3xl close-project" id="close-modal-project3"></i>
+  </div>
+  <div class="content container mb-2 mx-auto px-3">
+    <img src="img/hiBlog.png" class="w-full mb-10">
+    <div class="tech-project my-5">
+      <h3 class="font-medium">Skill & Technology</h3>
+      <div class="list-skill-project flex justify-start flex-wrap">
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Html 5</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Css 3</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Php</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Laravel 8</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Bootstrap 5</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Javascript</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">MySql</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Blog Content</div>
+      </div>
+    </div>
+    <h1 class="font-bold text-2xl">Project description</h1>
+    <p class="font-medium pb-10">
+      This is my project to create a blog with Laravel8 technology as backend and Bootstrap 5 as frontend. This website has a login and register page but I have disabled the signup page so people can't enter my website. On the admin/author page, there are several menus, the first is the dashboard page as the main page after the admin/author login, after that the posting page which contains a list of posts that have been made can also edit, view the preview page and delete a post and finally add a post. On the category page, there are also cruds for categories.
+
+      This page is responsive to all device sizes.
+    </p>
+  </div>
+</div>
+<div class="modal-project2 modal-project">
+  <div class="flex justify-end m-10">
+    <i class="fas fa-times text-3xl close-project" id="close-modal-project2"></i>
+  </div>
+  <div class="content container mb-2 mx-auto px-3">
+    <img src="img/infocovid.png" class="w-full mb-10">
+    <div class="tech-project my-5">
+      <h3 class="font-medium">Skill & Technology</h3>
+      <div class="list-skill-project flex justify-start flex-wrap">
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Api Integration</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Html 5</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Css 3</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Tailwind</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Javascript</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">jQuery</div>
+      </div>
+    </div>
+    <h1 class="font-bold text-2xl">Project description</h1>
+    <p class="font-medium pb-10">
+      This project was created to help the public get information about the latest data on covid-19 in Indonesia which is integrated with data from the central government, this website also has information about the availability of vacant beds for both Covid-19 and non-covid-19 sufferers in all hospitals in Indonesia, making it easier for the community.
+    </p>
+
+    <a href="http://infocovid-19.rf.gd/" target="_blank" class="bg-blue-700 text-white p-3 rounded-full">Visit Website</a>
+  </div>
+</div>
+<div class="modal-project1 modal-project">
+  <div class="flex justify-end m-10">
+    <i class="fas fa-times text-3xl close-project" id="close-modal-project1"></i>
+  </div>
+  <div class="content container mb-2 mx-auto px-3">
+    <img src="img/webmacha.png" class="w-full mb-10">
+    <div class="tech-project my-5">
+      <h3 class="font-medium">Skill & Technology</h3>
+      <div class="list-skill-project flex justify-start flex-wrap">
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Html 5</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Css 3</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Php</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Bootstrap 4</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Javascript</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">jQuery</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">MySql</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Ajax</div>
+        <div class="list bg-gray-200 p-2 rounded-lg text-sm m-1">Real Time</div>
+      </div>
+    </div>
+    <h1 class="font-bold text-2xl">Project description</h1>
+    <p class="font-medium pb-10">
+      This is a website created with real time technology. With this website we can chat with bots directly.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+  <script src="js/jQuery.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
