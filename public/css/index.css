@@ -142,7 +142,10 @@ footer {
   height: 50px;
   right: 30px;
   bottom: 60px;
+  position: fixed;
 }
+
+
 
 .to-top:hover{
   width: 55px;

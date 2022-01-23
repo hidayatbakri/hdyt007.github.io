@@ -38,9 +38,34 @@ for (let i = 1; i <= $('#total-project').val() ; i++) {
     $('.modal-project' + i).addClass('active');
     $('body').css('overflow-y', 'hidden')
   });
-
+  
   $('#close-modal-project' + i).on('click', () => {
     $('.modal-project').removeClass('active');
     $('body').css('overflow-y', '')
   });
 }
+
+$('.rounded-to-top').hide(300);
+
+$(window).scroll(function() {
+  let wScroll = $(this).scrollTop();
+
+  console.log(wScroll);
+
+  if (wScroll >= 300) {
+    $('.rounded-to-top').show(300);
+  }else{
+    $('.rounded-to-top').removeClass('this-bottom')
+    $('.rounded-to-top').hide(300);
+  }
+})
+
+// gsap
+gsap.registerPlugin(TextPlugin);
+gsap.to('.desc-about', {duration: 3.5, delay: .5, text: 'Hi, I am a programmer in the field of frontend and backend developer or fullstack developer. I am punctual, discipline, and uphold quality person .'})
+
+// aos
+AOS.init({
+  once: true,
+  duration: 1000,
+});
